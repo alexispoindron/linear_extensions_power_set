@@ -1,5 +1,5 @@
-The most unbiased way to produce linear extensions is probably "convex_hull".
-This algorithm produces the n! ``fast algorithm duplication linear extensions". For N=[0,1,2,3], here are some: 
+This algorithm produces the a random linear extension of the power set for n>=4. 
+For N=[0,1,2,3], here are some examples.
 
 []
 [3]
