@@ -17,7 +17,7 @@ import time
 
 start=time.time()
 
-N = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10, 11, 12]
+N = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 n = len(N)
 
 import random
@@ -61,6 +61,7 @@ def rename(EL, order):
 def hypercube_EL(N):
     return generate_subsets(N)
 
+
 def next_track(EL_ref, track, EL_result):
     xini = track
     while EL_ref[xini] in EL_result:
@@ -101,7 +102,7 @@ for k in range(1, 2**n):
 
 end=time.time()
 
-#for k in range(len(EL_result)):
- #   print(EL_result[k])
+for k in range(len(EL_result)):
+    print(EL_result[k])
 
 print("time=",end-start)
