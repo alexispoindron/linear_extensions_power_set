@@ -1,5 +1,5 @@
 The most unbiased way to produce linear extensions is probably "convex_hull".
-This algorithm produces the n! ``hypercube duplication linear extensions". For N=[0,1,2,3], here are some: 
+This algorithm produces the n! ``fast algorithm duplication linear extensions". For N=[0,1,2,3], here are some: 
 
 []
 [3]
@@ -141,4 +141,3 @@ etc.
 
 Then, we produce a linear extension ``in the convex hull'' of these extremal (=hypercube duplication) linear extensions with the mean of a random walk between them, by capturing each time the first element that has not been yet added to the linear extension we are producing.
 
-The algorithm "with only two extremal points" takes a single permutation of the "majority" linear extension (where we add elements layer by layer - cardinality by cardinality - from the power set) and a single permutation of the "hypercube duplication" linear extension. This approach is biased for sure, but it may be useful to generate large linear extensions, as we do not have to produce n! extremal points.
