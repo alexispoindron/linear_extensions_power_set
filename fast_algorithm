@@ -61,21 +61,6 @@ def rename(EL, order):
 def hypercube_EL(N):
     return generate_subsets(N)
 
-def cardinality_EL(N):
-    card = []
-    for k in range(n + 1):
-        card.append([])
-    for S in generate_subsets(N):
-        card[len(S)].append(S)
-    for k in range(n + 1):
-        card[k] = list(random.choice(all_permutations(card[k])))
-    card2 = []
-    for k in range(n + 1):
-        for S in card[k]:
-            card2.append(S)
-    return card2
-
-
 def next_track(EL_ref, track, EL_result):
     xini = track
     while EL_ref[xini] in EL_result:
